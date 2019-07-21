@@ -5,6 +5,11 @@ import org.junit.runner.RunWith;
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
+/**
+ * 
+ * @author marco.mangan@gmail.com
+ *
+ */
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "src/test/resources")
 public class CucumberTests {
