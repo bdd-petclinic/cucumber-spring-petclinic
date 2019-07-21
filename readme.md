@@ -1,6 +1,6 @@
 # Spring PetClinic Sample Application with Cucumber! [![Build Status](https://travis-ci.org/bdd-petclinic/cucumber-spring-petclinic.svg?branch=master)](https://travis-ci.org/bdd-petclinic/cucumber-spring-petclinic)
 Deploy this sample application to Pivotal Web Services:
-<a href="https://push-to.cfapps.io?repo=https%3A%2F%2Fgithub.com%2Fspring-projects%2Fspring-petclinic.git">
+<a href="https://push-to.cfapps.io?repo=https%3A%2F%2Fgithub.com%2Fbdd-petclinic%2Fcucumber-spring-petclinic.git">
     <img src="https://push-to.cfapps.io/ui/assets/images/Push-to-Pivotal-Dark.svg" width="130" alt="Push" align="top">
 </a>
 
@@ -12,8 +12,8 @@ Petclinic is a [Spring Boot](https://spring.io/guides/gs/spring-boot) applicatio
 
 
 ```
-git clone https://github.com/spring-projects/spring-petclinic.git
-cd spring-petclinic
+git clone https://github.com/bdd-petclinic/cucumber-spring-petclinic.git
+cd cucumber-spring-petclinic
 ./mvnw package
 java -jar target/*.jar
 ```
@@ -29,7 +29,7 @@ Or you can run it from Maven directly using the Spring Boot Maven plugin. If you
 ```
 
 ## In case you find a bug/suggested improvement for Spring Petclinic
-Our issue tracker is available here: https://github.com/spring-projects/spring-petclinic/issues
+Our issue tracker is available here: https://github.com/bdd-petclinic/cucumber-spring-petclinic/issues
 
 
 ## Database configuration
@@ -44,7 +44,7 @@ You could start MySql locally with whatever installer works for your OS, or with
 docker run -e MYSQL_ROOT_PASSWORD=petclinic -e MYSQL_DATABASE=petclinic -p 3306:3306 mysql:5.7.8
 ```
 
-Further documentation is provided [here](https://github.com/spring-projects/spring-petclinic/blob/master/src/main/resources/db/mysql/petclinic_db_setup_mysql.txt).
+Further documentation is provided [here](https://github.com/bdd-petclinic/cucumber-spring-petclinic/blob/master/src/main/resources/db/mysql/petclinic_db_setup_mysql.txt).
 
 ## Working with Petclinic in your IDE
 
@@ -63,7 +63,7 @@ The following items should be installed in your system:
 
 1) On the command line
 ```
-git clone https://github.com/spring-projects/spring-petclinic.git
+git clone https://github.com/bdd-petclinic/cucumber-spring-petclinic.git
 ```
 2) Inside Eclipse or STS
 ```
@@ -77,7 +77,7 @@ Then either build on the command line `./mvnw generate-resources` or using the E
 In the main menu, choose `File -> Open` and select the Petclinic [pom.xml](pom.xml). Click on the `Open` button.
 
 CSS files are generated from the Maven build. You can either build them on the command line `./mvnw generate-resources`
-or right click on the `spring-petclinic` project then `Maven -> Generates sources and Update Folders`.
+or right click on the `cucumber-spring-petclinic` project then `Maven -> Generates sources and Update Folders`.
 
 A run configuration named `PetClinicApplication` should have been created for you if you're using a recent Ultimate
 version. Otherwise, run the application by right clicking on the `PetClinicApplication` main class and choosing
@@ -92,8 +92,8 @@ Visit [http://localhost:8080](http://localhost:8080) in your browser.
 
 |Spring Boot Configuration | Class or Java property files  |
 |--------------------------|---|
-|The Main Class | [PetClinicApplication](https://github.com/spring-projects/spring-petclinic/blob/master/src/main/java/org/springframework/samples/petclinic/PetClinicApplication.java) |
-|Properties Files | [application.properties](https://github.com/spring-projects/spring-petclinic/blob/master/src/main/resources) |
+|The Main Class | [PetClinicApplication](https://github.com/bdd-petclinic/cucumber-spring-petclinic/blob/master/src/main/java/org/springframework/samples/petclinic/PetClinicApplication.java) |
+|Properties Files | [application.properties](https://github.com/bdd-petclinic/spring-petclinic/blob/master/src/main/resources) |
 |Caching | [CacheConfiguration](https://github.com/spring-projects/spring-petclinic/blob/master/src/main/java/org/springframework/samples/petclinic/system/CacheConfiguration.java) |
 
 ## Interesting Spring Petclinic branches and forks
