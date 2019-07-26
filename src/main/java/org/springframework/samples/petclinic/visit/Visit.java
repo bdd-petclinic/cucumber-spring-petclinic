@@ -35,7 +35,12 @@ import org.springframework.samples.petclinic.model.BaseEntity;
 @Table(name = "visits")
 public class Visit extends BaseEntity {
 
-    @Column(name = "visit_date")
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = -1400610663349907927L;
+
+	@Column(name = "visit_date")
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     private LocalDate date;
 
