@@ -7,6 +7,8 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.web.servlet.ResultActions;
 
+import cucumber.api.PendingException;
+import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
@@ -38,4 +40,35 @@ public class CucumberSteps extends CucumberIntegrationTests {
 	public void a_list_of_all_owners_is_displayed() throws Throwable {
 		results.andExpect(status().isOk()).andExpect(view().name("owners/ownersList"));
 	}
+	
+	@Given("^a person with empty first name$")
+	public void a_person_with_empty_first_name() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new PendingException();
+	}
+
+	@Given("^\"([^\"]*)\" as last name$")
+	public void as_last_name(String arg1) throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new PendingException();
+	}
+
+	@When("^person is validated$")
+	public void person_is_validated() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new PendingException();
+	}
+
+	@Then("^invalid field must be \"firstName$")
+	public void invalid_field_must_be_firstName() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new PendingException();
+	}
+
+	@Then("^message must be ”must not be empty\"$")
+	public void message_must_be_must_not_be_empty() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new PendingException();
+	}	
+	
 }
